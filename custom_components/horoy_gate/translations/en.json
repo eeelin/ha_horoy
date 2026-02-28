@@ -1,13 +1,3 @@
 {
-  "title": "Horoy Gate",
-  "services": {
-    "list_doors": {
-      "name": "List doors",
-      "description": "Fetch available doors from the Horoy gate API."
-    },
-    "open_door": {
-      "name": "Open door",
-      "description": "Open a door by name or by full credentials."
-    }
-  }
+  "title": "Horoy Gate"
 }

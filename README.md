@@ -2,10 +2,10 @@
 
 Home Assistant custom integration for Horoy gate control.
 
-## Features
+## What it does
 
-- `horoy_gate.list_doors`: list available doors
-- `horoy_gate.open_door`: open a door by name (or by full `name+code+ekey`)
+This integration discovers doors from Horoy API and exposes **each door as a Button device/entity** in Home Assistant.
+Pressing the button opens that specific door.
 
 ## Installation
 
@@ -18,27 +18,11 @@ horoy_gate:
   base_url: http://horoy.ruyi.homes:8000
 ```
 
-## Usage examples
+## Usage
 
-### List doors
+After Home Assistant restarts:
 
-Developer Tools → Services:
-
-- Service: `horoy_gate.list_doors`
-
-### Open by door name
-
-- Service: `horoy_gate.open_door`
-- Data:
-
-```yaml
-name: "2B栋负一楼"
-```
-
-### Open by full payload
-
-```yaml
-name: "2B栋负一楼"
-code: "4285401963"
-ekey: "..."
-```
+1. Go to **Settings → Devices & Services** (or Entities)
+2. Find entities under integration domain `horoy_gate`
+3. Each door appears as its own button entity/device
+4. Press the button to open that door
