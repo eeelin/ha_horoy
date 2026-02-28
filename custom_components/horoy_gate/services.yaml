@@ -1,0 +1,23 @@
+list_doors:
+  name: List doors
+  description: Fetch available doors from the Horoy gate API.
+
+open_door:
+  name: Open door
+  description: Open a door. Provide either (name) or full (name, code, ekey).
+  fields:
+    name:
+      required: false
+      example: "2B栋负一楼"
+      selector:
+        text:
+    code:
+      required: false
+      example: "4285401963"
+      selector:
+        text:
+    ekey:
+      required: false
+      example: "250062...111000"
+      selector:
+        text:
