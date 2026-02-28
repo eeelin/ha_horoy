@@ -1,0 +1,9 @@
+{
+  "domain": "horoy_gate",
+  "name": "Horoy Gate",
+  "codeowners": ["@eeelin"],
+  "documentation": "https://github.com/eeelin/ha_horoy",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}
